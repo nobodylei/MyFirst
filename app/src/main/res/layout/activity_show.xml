@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:padding="15dp"
+        android:textSize="17dp"
+        android:text="‘’贷一路‘’是宁夏中阿金融产业园旗下的互联网科技金融产品，宁夏中阿金融产业园是国家专注服务于一带一路项目金融业务的机构，拥有经验丰富的金融风控管理团队，目前有数以百计的国内外大中小型企业及优质商家进入园中，可管理超过百亿资金，‘’贷一路‘凭借着金融产业园的三方支付行业塑造的专业品牌，以客户利益为出发点，以金融银行行为为发展目标，打造独立第三方的金融服务平台，为客户提供流程规范多元化的金融产品，多选择的金融服务，助力优质服务，成就企业及个人梦想！"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <View
+        android:background="@android:color/darker_gray"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+    <CheckBox
+        android:id="@+id/checkbox"
+        android:layout_marginLeft="20dp"
+        android:textColor="@android:color/holo_orange_dark"
+        android:padding="15dp"
+        android:button="@drawable/check_style"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="同意《安心签平台服务协议》、《安心签平台隐私条款》、《CFCA数字证书服务协议》" />
+    <View
+        android:background="@android:color/darker_gray"
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"/>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_margin="10dp"
+        android:background="@drawable/right"
+        android:text="下一步"
+        android:textColor="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+
+</LinearLayout>

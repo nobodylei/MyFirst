@@ -1,0 +1,55 @@
+apply plugin: 'com.android.application'
+
+android {
+    signingConfigs {
+        fasetest {
+            keyAlias 'key0'
+            keyPassword '123456'
+            storeFile file('C:/Users/yanle/fasetest.jks')
+            storePassword '123456'
+        }
+    }
+    buildTypes {
+
+        release {
+
+            minifyEnabled false
+
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+
+        }
+    }
+    compileSdkVersion 26
+    defaultConfig {
+        applicationId "com.cxhy.www.fasetest"
+        minSdkVersion 16
+        targetSdkVersion 26
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildToolsVersion '26.0.2'
+    useLibrary 'org.apache.http.legacy'
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:26.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.1'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
+    compile 'org.xutils:xutils:3.3.36'
+    compile 'com.github.nanchen2251:CompressHelper:1.0.5'
+    compile 'com.lzy.widget:imagepicker:0.5.0'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.google.code.gson:gson:2.8.2'
+    compile 'org.apache.commons:commons-lang3:3.2.1'
+    implementation 'com.alibaba:fastjson:1.1.68.android'
+}
