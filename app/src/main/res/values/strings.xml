@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">贷一路</string>
+    <string name="app_name">first</string>
     <string name="user_name">用户名：</string>
     <string name="password">密&#160;&#160;&#160;&#160;码：</string>
     <string name="user_hint">请输入用户名</string>
